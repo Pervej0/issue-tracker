@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Issue-tracker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <div class="mt-5 w-75 mx-auto p-4 border rounded">
+        <h1 class="text-center text-uppercase text-success">Just tell us 😉</h1>
+        <label class="fw-bold">Description:</label>
+        <input
+          class="form-control mb-2"
+          type="text"
+          name="issue-name"
+          placeholder="Enter your issue.."
+          id="issue-name"
+        />
+        <label class="fw-bold" for="cars">Severity:</label>
+        <select
+          class="form-select mb-2"
+          aria-label="Default select example"
+          id="issue-priority"
+        >
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <label class="fw-bold">Assigned To:</label>
+        <input
+          class="form-control"
+          type="text"
+          name="issue-assign"
+          placeholder="Assign to.."
+          id="issue-assign"
+        />
+        <button class="btn btn-success text-uppercase mt-4" id="submit-click">
+          Submit
+        </button>
+      </div>
+    </section>
+    <!-- issues items field -->
+    <section class="container mt-4">
+      <div id="issue-field"></div>
+    </section>
+    <!-- custom js -->
+    <script src="./script.js"></script>
+  </body>
+</html>
